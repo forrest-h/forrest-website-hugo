@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FH | Publications</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/icons/icon.svg">
+
+</head>
+
+<header class="header-main" id="top">
+  <nav><a href=/ class='header-nav hoverhead'>Home</a>
+    <a href=/pdfs/HangenCVNov2022.pdf class='header-nav hoverhead'>CV</a>
+    <a href=/research class='header-nav hoverhead'>Research</a>
+    <a href=/publications class='header-nav hoverhead'>Publications</a>
+    <a href=/teaching class='header-nav hoverhead'>Teaching</a>
+    <a href="https://github.com/forrest-h/" class='header-nav hoverhead'>Code</a>
+    <a href="https://linktr.ee/forresthangen" class='header-nav hoverhead'>Contact</a>
+
+
+
+  </nav>
+  <div class="nav-right">
+
+  </div>
+</header>
+
+<body class="main-bg section-pages">
+  <br><br>
+  <br>
+  <div>
+
+    <h3>Featured Publications</h3>
+      <br><br><br>
+      <a href="/pdfs/HangenCVNov2022.pdf" download="ForrestHangenCV.pdf">
+      <button   class="pushable">
+        <span  class="shadow"></span>
+        <span class="edge"></span>
+        <span  class="front">
+          <h3 class="download-cv">Download CV</h3>
+        </span>
+      </button>
+      </a>
+      <br><br>      <br><br>
+
+
+
+    {{ range (where .Site.Pages "Section" "publications") }}
+    {{ range (first 6 (.Pages.ByParam "highlight")) }}
+    <div class="hero-pub">
+
+      <div class="hero-text-pub">
+        <a class="pub_title"  href='{{.Params.Doi}}'>{{.Title}}</a>
+
+        <br><br>
+
+        <a class="hero-pub-textp-full" href="{{.Params.Doi}}">{{.Params.Abstract}}</a>
+        <br><br>
+        <a href="{{.Params.Doi}}" class="publinks">DOI</a>
+        {{ if (not (isset .Params "code")) }}
+        {{ else }}
+        <a href="{{.Params.code}}" class="publinks">Code</a>
+        {{ end }}
+        {{ if (not (isset .Params "data")) }}
+        {{ else }}
+        <a href="{{.Params.data}}" class="publinks">Data</a>
+        {{ end }}
+        {{ if (not (isset .Params "pdf")) }}
+        {{ else }}
+        <a href="{{.Params.pdf}}" class="publinks">PDF</a>
+        {{ end }}
+
+
+
+      </div>
+
+
+      <div class="hero-image-pub-full">
+        <a href="{{.Params.Doi}}" class="hero-img-journal">{{.Params.journal}}</a>
+
+        {{ $image := .Resources.GetMatch "thumbnail.jpg" }}
+
+        <a href="{{.Params.Doi}}" class="publinks hero-img-pub">
+          <img src="{{ $image.RelPermalink }}" href="{{.Params.Doi}}" class="hero-img-pub">
+        </a>
+
+
+      </div>
+    </div>
+
+    {{end}}
+    {{ end }}
+  </div>
+  <br><br><br><br><br><br>
+  <a href="#">
+  <div class="scroll-up">
+  </div>
+  </a>
+  <br><br><br><br><br><br>
+  <p>Designed by Forrest Hangen</p>
+  <br>
+</body>
