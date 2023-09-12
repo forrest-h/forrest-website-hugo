@@ -1195,6 +1195,15 @@ a:hover {
   text-align: left;
 }
 
+.hero-text-pub-mobile {
+  margin-left: 10px;
+  margin-right: auto;
+  padding: .5rem;
+  max-width: 90%;
+  text-align: left;
+}
+
+
 .hero-image-pub-full {
   margin-left: auto;
   margin-right: 0px;
@@ -1599,6 +1608,14 @@ a:hover {
   perspective: 600px;
 }
 
+
+.scenec--mobile {
+  display: inline-block;
+  width: 80%;
+  height: 670px;
+  perspective: 600px;
+}
+
 .card {
   position: relative;
   width: 100%;
@@ -1671,6 +1688,10 @@ a:hover {
 
 .res-click {
   font-size: 2rem;
+}
+
+.res-click-m {
+  font-size: 1.5rem;
 }
 
 .hero-img-research-front {
