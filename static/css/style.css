@@ -92,6 +92,21 @@ a:hover {
   color: rgb(200, 16, 46);
 }
 
+
+#alert-if-safari {
+    color: rgb(255, 255, 255);  /* White text */
+    font-family: 'DM Mono', monospace;  /* Monospace font */
+    font-weight: 400;
+    font-size: 1rem;
+    width: 50%;                /* 50% of the page width */
+    margin-left: auto;         /* Centering the div */
+    margin-right: auto;
+    text-align: center;        /* Centering the text inside the div */
+}
+
+
+
+
 .header-main {
   width: 100%;
   display: flex;
