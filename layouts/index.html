@@ -127,7 +127,17 @@
     <div class="scroll">
     </div>
     </a>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <script>
+        if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+            document.getElementById("safariOnlyText").style.display = "block";
+        }
+    </script>
+
+
+    <br><br><br><br><br><br><br><br><div id="safariOnlyText" style="display: none;">
+    Hi. It looks like you are viewing this website in Safari. Below this there should be a 3d graphic of a city that I developed. Unfortunately this doesn't work in Safari (the dangers of writing your own website from scratch :/ ) So please visit this website using Firefox, Chrome, or Edge. Thanks!</div><br><br><br><br><br><br><br><br><br>
     <div class="content" id="city-map">
       <!-- HTML MODEL FOR BOX-->
       <div class="box" id="box-research" onclick="location.href='/research';">
