@@ -127,6 +127,17 @@
     <div class="scroll">
     </div>
     </a>
+    <div role="alert" id='alert-if-safari'></div>
+    <script>
+
+        var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        if (is_safari) {
+            const alert_div = document.getElementById('alert-if-safari')
+            alert_div.className = 'alert alert-danger'
+            alert_div.innerHTML = 'Open my website via chrome browser!'
+        }
+
+    </script>
 
 
     <script>
