@@ -231,6 +231,7 @@ a:hover {
 }
 
 .box {
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -244,6 +245,7 @@ a:hover {
 
 .box__face {
   position: absolute;
+  -webkit-transform-style: flat;
   transform-style: flat;
   display: flex;
   flex-wrap: wrap;
@@ -255,6 +257,7 @@ a:hover {
   left: 0;
   top: 0;
   transform-origin: 0% 0%;
+  -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
 }
 
@@ -262,6 +265,7 @@ a:hover {
   left: 0;
   bottom: 0;
   transform-origin: 0% 100%;
+  -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
 
@@ -269,6 +273,7 @@ a:hover {
   top: 0;
   left: 0;
   transform-origin: 0% 0%;
+  -webkit-transform: rotateY(-90deg);
   transform: rotateY(-90deg);
 }
 
@@ -276,6 +281,7 @@ a:hover {
   top: 0;
   right: 0;
   transform-origin: 100% 0%;
+  -webkit-transform: rotateY(90deg);
   transform: rotateY(90deg);
 }
 
