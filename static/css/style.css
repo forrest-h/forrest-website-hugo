@@ -223,7 +223,10 @@ a:hover {
   margin-right: auto;
   height: 180%;
   width: 100%;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: translateZ(0); /* Force hardware acceleration */
+  transform: translateZ(0);
   background: rgba(20,20,20,.9);
 }
 
