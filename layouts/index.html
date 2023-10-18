@@ -127,21 +127,21 @@
     <div class="scroll">
     </div>
     </a>
-    <div role="alert" id='alert-if-safari'></div>
+
     <script>
 
         var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         if (is_safari) {
             const alert_div = document.getElementById('alert-if-safari')
             alert_div.className = 'alert alert-danger'
-            alert_div.innerHTML = "Hi there!\n It looks like you are viewing this website in Safari. Below this there should be a 3D graphic of a city that I developed. Unfortunately this doesn't work in Safari -- the dangers of writing your own website from scratch :/ So please visit this website using Firefox or Chrome. Thanks! -Forrest"
+            alert_div.innerHTML = "Hi there!<br>It looks like you are viewing this website in Safari. Below this there should be a 3D graphic of a city that I developed. Unfortunately this doesn't work in Safari -- the dangers of writing your own website from scratch :/ So please visit this website using Firefox or Chrome. <br>Thanks!<br>--Forrest"
         }
 
     </script>
 
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><div role="alert" id='alert-if-safari'></div><br><br><br><br><br><br><br><br><br>
     <div class="content" id="city-map">
       <!-- HTML MODEL FOR BOX-->
       <div class="box" id="box-research" onclick="location.href='/research';">
