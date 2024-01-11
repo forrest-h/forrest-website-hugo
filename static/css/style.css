@@ -392,7 +392,7 @@ a:hover {
   --height: 100vw;
   --length: 18%;cursor: pointer;
   --color: 20;
-  --hue: 56;
+  --hue: 56;<p class="hero-p-m">
   --sat: 100%;
   --light: 65%;
   font-size: 40vw;
@@ -1912,7 +1912,19 @@ a:hover {
 
 }
 
+.content-diagonal-callout-m {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1.5em;
+  position: relative;
 
+  /* -----------
+  enable the border to see, that the content
+  perfectly fits into the section withou
+  bleeding into the adjecting areas:
+  ------------ */
+  // border: 2px dashed #fff8;
+}
 
 .content-diagonal-callout {
   max-width: 40%;
