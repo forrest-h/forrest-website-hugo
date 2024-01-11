@@ -1978,7 +1978,7 @@ a:hover {
   position: relative;
   padding: 1rem 0;
   margin-top: -1px;
-  margin-bottom:-1rem;
+  margin-bottom:-10rem;
   cursor: pointer;
 
   &:before {
