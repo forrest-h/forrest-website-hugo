@@ -1913,7 +1913,7 @@ a:hover {
 }
 
 .content-diagonal-callout-m {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
   padding: 1.5em;
   position: relative;
@@ -1964,6 +1964,31 @@ a:hover {
 
 .intro-diagonal {
   font-size: 2.25em;
+  transform: skewY(-5deg);
+  margin: 0em auto 0em;
+  text-align: center;
+  background: #fff;
+  color: #003;
+  font-weight: 900;
+  padding: 0.5em;
+  text-transform: uppercase;
+
+  a {
+    background-image: linear-gradient(transparent 90%, 0, #003 100%);
+    background-image: none;
+    border-bottom: 4px solid;
+    transition: none;
+
+    &:hover {
+      border-color: #a06;
+      opacity: 1;
+    }
+  }
+}
+
+
+.intro-diagonal-m {
+  font-size: 1.8em;
   transform: skewY(-5deg);
   margin: 0em auto 0em;
   text-align: center;
