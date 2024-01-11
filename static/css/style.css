@@ -163,6 +163,18 @@ a:hover {
   background-color: rgba(0, 0, 0, .5);
 }
 
+.hero-m {
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 90%;
+  position: relative;
+  background-color: rgba(0, 0, 0, .5);
+}
+
 .hero-text {
   margin-left: auto;
   margin-right: .1vw;
