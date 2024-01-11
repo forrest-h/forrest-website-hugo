@@ -390,7 +390,7 @@ a:hover {
   --left: 54%;
   --width: 22%;
   --height: 100vw;
-  --length: 18%;
+  --length: 18%;cursor: pointer;
   --color: 20;
   --hue: 56;
   --sat: 100%;
@@ -1912,3 +1912,64 @@ a:hover {
 
 }
 
+
+
+.content-diagonal-callout {
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 1.5em;
+  position: relative;
+
+  /* -----------
+  enable the border to see, that the content
+  perfectly fits into the section withou
+  bleeding into the adjecting areas:
+  ------------ */
+  // border: 2px dashed #fff8;
+}
+
+.diagonal-box {
+  position: relative;
+  padding: 1rem 0;
+  margin-top: -1px;
+  margin-bottom:-7rem;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewy(-5deg);
+    transform-origin: 50% 0;
+    outline: 1px solid transparent;
+    backface-visibility: hidden;
+  }
+}
+
+
+.intro-diagonal {
+  font-size: 2.25em;
+  transform: skewY(-5deg);
+  margin: 0em auto 0em;
+  text-align: center;
+  background: #fff;
+  color: #003;
+  font-weight: 900;
+  padding: 0.5em;
+  text-transform: uppercase;
+
+  a {
+    background-image: linear-gradient(transparent 90%, 0, #003 100%);
+    background-image: none;
+    border-bottom: 4px solid;
+    transition: none;
+
+    &:hover {
+      border-color: #a06;
+      opacity: 1;
+    }
+  }
+}
