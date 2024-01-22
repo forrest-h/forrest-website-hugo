@@ -62,6 +62,8 @@ h3 {
   font-size: 1vw;
 }
 
+
+
 .sub-h3 {
   color: rgb(255, 255, 255);
   font-family: 'DM Mono', monospace;
@@ -201,11 +203,14 @@ a:hover {
   max-width: 40%;
   position: relative;
   justify-items: end;
+
 }
 
 .hero-img {
   margin-right: 0px;
   width: 100%;
+  border-radius:15px 100px;
+    overflow:hidden;
 }
 
 .building-text {
